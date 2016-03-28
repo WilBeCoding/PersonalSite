@@ -9,6 +9,10 @@ a {
   color: #00B7FF;
 }
 
+h1 {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
 .headerContainer {
   display: flex;
 
@@ -17,11 +21,14 @@ a {
 .header {
   display: flex;
   flex-direction: column;
-  background-color: red;
   height:40vh;
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-image: url('../images/stretchTest.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .mainBody {
@@ -32,12 +39,16 @@ a {
 .twitter {
   height:100vh;
   width:20%;
-  background-color: orange;
 }
 
 .midPage {
   background-color: purple;
   width:59%;
+}
+
+.secondaryHeader {
+  display: flex;
+  justify-content: center;
 }
 
 .spotify {
@@ -59,7 +70,6 @@ a {
 
 .testUnderImg {
   display: flex;
-  background-color: orange;
 }
 
 ul {
@@ -68,4 +78,5 @@ ul {
 
 ul li {
   font-size: 24px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
