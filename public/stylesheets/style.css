@@ -39,11 +39,11 @@ h1 {
 .twitter {
   height:100vh;
   width:20%;
+  border-right: 1px solid black;
 }
 
 .midPage {
-  background-color: purple;
-  width:59%;
+  width:60%;
 }
 
 .secondaryHeader {
@@ -52,14 +52,12 @@ h1 {
 }
 
 .spotify {
-  background-color: green;
   height: 100vh;
-  width: 21%;
+  width: 20%;
 }
 
 .circleImage {
   border-radius: 75%;
-  /*display:block;*/
   width: 140px;
   height: 140px;
   overflow: hidden;
