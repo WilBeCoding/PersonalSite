@@ -9,17 +9,20 @@ $(document).ready(function() {
   $(window).load(function() {
     $(window).scroll(function() {
     if ($(this).scrollTop() > 1){  
-        $(".testUnderImg > h1").remove();
-        $(".testUnderImg1 > ul").remove();
-        $('.header').addClass("sticky");
-        $('.circleImage').addClass('circleImageHeader')
+        $(".testUnderImg").remove();
+        $(".testUnderImg1").remove();
+        $(".header").addClass("sticky");
+        $(".circleImage").addClass("circleImageHeader");
+        $('.spotify').css('visibility','visible').hide().slideDown();
+        $('.spotify').css('display','flex');
+        $('.twitterheader').css('visibility','visible').hide().slideDown();
+        $('.twitterheader').css('display','flex');
+        $('.followBttn').css('visibility','visible').hide().slideDown();
+        $('#error').css('display', 'flex');
       }
       else{
-        $('.header').removeClass("sticky");
-        $('.circleImage').removeClass('circleImageHeader')
-        $(".testUnderImg > h1").text("Wilson Rondini");
-        $(".testUnderImg1 > ul").remove();
-
+        $(".header").removeClass("sticky");
+        $(".circleImage").removeClass("circleImageHeader");
       }
     });
   });
