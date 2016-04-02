@@ -48,12 +48,6 @@ h1 {
   width:100%;
 }
 
-.domeHeader {
-  display:flex;
-  width: 100%;
-  justify-content: center;
-  background-color: orange;
-}
 
 .secondaryHeader {
   width: 100%;
@@ -61,15 +55,19 @@ h1 {
   justify-content: center;
 }
 
+.domeHeader {
+  background-color: orange;
+}
+
 .spotify {
   background-color: red;
-  width: 20%;
+  width: 30%;
 }
 
 .followBttn {
-  /*background-color: blue;*/
+  background-color: blue;
+  width: 30%;
   /*padding-left: 10px;*/
-  width: 20%;
 }
 
 .staticHeader {
@@ -95,7 +93,6 @@ h1 {
   width: 75px;
   height: 75px;
   overflow: hidden;
-  margin: 0 auto;
   text-decoration: none;
   margin-top: 4px;
   color: orange;
