@@ -1,6 +1,16 @@
 extends layout
 
 block content
+  .staticHeader
+    .followBttn
+       <iframe width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true" src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2ciByYBF9snRskYOqoB5Qf&size=detail&theme=light&show-count=0"></iframe>
+    //- .twitterHeader
+    //-   <a class="twitter-timeline" href="https://twitter.com/WilBeCoding" data-widget-id="714215286048628736" data-width="288" data-height="10" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1"></a> 
+    //-   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    .domeHeader
+      img.circleImageHeader(src='../images/daPhuck.jpg', alt='')
+    .spotify
+       <iframe src="https://embed.spotify.com/?uri=spotify:album:5VtiW4DabvLmY9vJH80GXd" width="288" height="98" frameborder="0" allowtransparency="true"></iframe>
   .header
     img.circleImage(src='../images/daPhuck.jpg', alt='')
     .testUnderImg
@@ -9,12 +19,6 @@ block content
       ul
         li Insert sentence
         li wilbecoding@gmail.com
-  .twitter
-    <a class="twitter-timeline" href="https://twitter.com/WilBeCoding" data-widget-id="714215286048628736">Tweets by @WilBeCoding</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   .midPage
     .secondaryHeader
       h2 Middle Of The Page
-  .spotify
-   <iframe src="https://embed.spotify.com/?uri=spotify:album:5VtiW4DabvLmY9vJH80GXd" width="289" height="380" frameborder="0" allowtransparency="true"></iframe>
-   <iframe width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true" src="https://embed.spotify.com/follow/1/?uri=spotify:artist:2ciByYBF9snRskYOqoB5Qf&size=detail&theme=light&show-count=0"></iframe>
