@@ -17,6 +17,36 @@ h1 {
   display: flex;
 
 }
+.spotify {
+  -webkit-backface-visibility: hidden;
+  z-index:25;
+  /*overflow: hidden;*/
+  background-color: red;
+  width: 455px;
+}
+
+.spotify:hover {
+  height: 540px;
+  z-index:99999;
+}
+
+#spotify{
+  z-index:99999999;
+  min-width: 455px;
+  height: 98px;
+/*  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+*/}
+
+#spotify:hover {
+  transition: height 1.5s cubic-bezier(0,1,.98,0);
+  height: 540px;
+  min-width: 455px;
+  z-index:99999;
+}
+.no-flick{
+  -webkit-transform:translate3d(0,0,0);
+}
 
 .header {
   display: flex;
@@ -59,12 +89,6 @@ h1 {
   background-color: orange;
 }
 
-.spotify {
-  /*overflow: hidden;*/
-  background-color: red;
-  width: 475px;
-  z-index: 9999999;
-}
 
 .followBttn {
   /*background-color: blue;*/
@@ -79,7 +103,7 @@ h1 {
 
 .leftHeader {
   background-color: blue;
-  width: 475px;
+  width: 455px;
 }
 
 .staticHeader {
