@@ -44,6 +44,8 @@ h1 {
 
 iframe{
   z-index:1;
+  position: relative;
+  width: 100%;
 /*  -webkit-transition: height ease 1s;
   -moz-transition: height ease 1s;
   -o-transition: height ease 1s;
@@ -51,17 +53,32 @@ iframe{
 */}
 
 .iframe-wrapper {
-  height: 540px;
-  -webkit-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -moz-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -o-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  transition: height 1.5s cubic-bezier(0,1,.98,0);
+  
+  height:auto;
+  width:auto;
+  overflow:hidden;
 }
-
-/*iframe:hover {
+/*
+iframe:hover {
   height: 540px;
 }
-*//*#spotify:hover {
+*/
+.mark {
+    height:98px;
+/*    display:block;
+*/    -webkit-transition: height ease 1s;
+    -moz-transition: height ease 1s;
+    -o-transition: height ease 1s;
+    transition: height ease 1s;
+}
+.mark:hover {
+    height:540px !important;
+    -webkit-transition: height ease 1s;
+    -moz-transition: height ease 1s;
+    -o-transition: height ease 1s;
+    transition: height ease 1s;
+}
+/*#spotify:hover {
   -webkit-transition: height ease 1s;
   -moz-transition: height ease 1s;
   -o-transition: height ease 1s;
