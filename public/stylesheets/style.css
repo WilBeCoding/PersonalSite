@@ -60,13 +60,15 @@ h1 {
 }
 
 .spotify {
+  /*overflow: hidden;*/
   background-color: red;
-  width: 30%;
+  width: 450px;
+  z-index: 9999999;
 }
 
 .followBttn {
   background-color: blue;
-  width: 30%;
+  width: 450px;
   /*padding-left: 10px;*/
 }
 
