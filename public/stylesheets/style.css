@@ -18,28 +18,29 @@ h1 {
 
 }
 .spotify {
-  z-index:25;
+  /*z-index:25;*/
   overflow: hidden;
-  background-color: red;
+  /*background-color: red;*/
   width: 455px;
+  height:600px;
 }
 
 .hoverino {
   z-index: 3;
-  transition-duration: 15s;
-  -webkit-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -moz-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -o-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  transition: height 1.5s cubic-bezier(0,1,.98,0);
+  /*transition-duration: 15s;*/
+  -webkit-transition:  height ease 1s;
+  -moz-transition:  height ease 1s;
+  -o-transition:  height ease 1s;
+  transition:  height ease 1s;
 }
 
 .hoverino:hover {
   height: 540px !important;
   transition-duration: 15s;
-  -webkit-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -moz-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  -o-transition: height 1.5s cubic-bezier(0,1,.98,0);
-  transition: height 1.5s cubic-bezier(0,1,.98,0);
+  -webkit-transition:  height ease 1s;
+  -moz-transition:  height ease 1s;
+  -o-transition:  height ease 1s;
+  transition:  height ease 1s;
 }
 
 iframe{
@@ -52,13 +53,13 @@ iframe{
   transition: height ease 1s;
 */}
 
-.iframe-wrapper {
-  
+/*.iframe-wrapper {
+  z-index:3;
   height:auto;
   width:auto;
   overflow:hidden;
 }
-/*
+*//*
 iframe:hover {
   height: 540px;
 }
@@ -98,7 +99,7 @@ iframe:hover {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/stretchTest.jpeg');
+  /*background-image: url('../images/stretchTest.jpeg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
