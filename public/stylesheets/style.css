@@ -66,9 +66,9 @@ h1 {
 }
 
 .socialMedia {
-  display: none;
   justify-content: left;
   flex-direction: column;
+  width: 25%;
 }
 
 .socialMedia p {
@@ -76,8 +76,8 @@ h1 {
 }
 
 .spotify {
-  background-color: red;
-  width: 20%;
+  /*background-color: red;*/
+  width: 25%;
   display:none;
 }
 
@@ -114,7 +114,7 @@ h1 {
 
 
 .testUnderImg {
-  display: flex;
+
 }
 
 
@@ -158,5 +158,20 @@ header {
 */  width: 100%;
   height: 80px;
 }
+
+.headerName {
+  display:none;
+}
+
+.spotifyHide {
+  display:none;
+  width: 25%;
+  visibility: hidden;
+}
+
+.headerEmail {
+  display:none;
+}
+
 
 
