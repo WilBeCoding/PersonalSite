@@ -15,8 +15,8 @@ $(document).ready(function() {
         $(".circleImage").addClass("circleImageHeader");
         $('.spotify').css('visibility','visible').hide().slideDown();
         $('.spotify').css('display','flex');
-        // $('.twitterheader').css('visibility','visible').hide().slideDown();
-        // $('.twitterheader').css('display','flex');
+        $('.socialMedia').css('visibility','visible').hide().slideDown();
+        $('.socialMedia').css('display','flex');
         // $('.followBttn').css('visibility','visible').hide().slideDown();
         // $('.followBttn').css('display', 'flex');
       }
