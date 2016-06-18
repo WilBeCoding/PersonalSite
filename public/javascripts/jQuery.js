@@ -17,7 +17,7 @@ $(document).ready(function() {
           $('.spotifyHide').addClass('spotify');
           $('.spotify').removeClass('spotifyHide')
           $('.spotify').css('display','flex');
-          $('.headerName').css('visibility','visible').hide().slideDown();
+          $('.headerName').css('visibility','visible').slideDown();
           $('.headerEmail').css('display','flex');
           $('.headerEmail').css('visibility','visible');
           $('.socialMedia').css('display','flex');
