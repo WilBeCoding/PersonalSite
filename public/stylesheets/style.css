@@ -33,6 +33,8 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  border-bottom: 10px black;
+  border-bottom-style: solid;
 }
 
 .mainBody {
@@ -43,7 +45,7 @@ h1 {
 .twitter {
   height:100vh;
   width:25%;
-  background-color: purple;
+  /*background-color: purple;*/
   border-right: 1px solid black;
   justify-content: left;
 }
@@ -56,8 +58,8 @@ h1 {
   display:flex;
   width: 100%;
   justify-content: center;
-  background-color: orange;
-}
+/*  background-color: orange;
+*/}
 
 .secondaryHeader {
   width: 100%;
@@ -129,8 +131,8 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
   text-decoration: none;
-  color: orange;
-}
+/*  color: orange;
+*/}
 
 .circleImageFooter {
   border-radius: 75%;
@@ -139,7 +141,7 @@ h1 {
   overflow: hidden;
   margin: 0 auto;
   text-decoration: none;
-  color: orange;
+  /*color: orange;*/
 }
 
 .testUnderImg {
@@ -164,7 +166,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #0683c9;
+  /*background-color: #0683c9;*/
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -179,7 +181,7 @@ header {
   font-size: 24px;
   line-height: 48px;
   height: 48px;
-  background: #efc47D;
+  background: #FFFFFF;
   transition: all 1s ease;
   display:flex;
   flex-direction: row;
@@ -189,8 +191,11 @@ header {
 }
 
 .socialMediaIcons {
+  display: none;
   margin-top: 28px;
   margin-left: 4px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .headerName {
@@ -216,10 +221,15 @@ header {
   display:none;
 }
 
-/*#socialMediaLink {
-  display: block;
-  width: 23px;
-  height: 24px;
+.github:hover {
+  cursor: pointer;
 }
-*/
+
+/*.linkedIn {
+  margin-left: 9px;
+}
+*/.linkedIn:hover {
+  cursor: pointer;
+}
+
 

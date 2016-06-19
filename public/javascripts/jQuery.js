@@ -2,9 +2,6 @@
 $(document).ready(function() {
   var height = $(".header").height();
   var width = $(".header").width();
-
-  console.log("  height   " + height);
-  console.log("  width    " + width);
   
   // $(window).load(function() {
     $(window).scroll(function() {
@@ -17,10 +14,11 @@ $(document).ready(function() {
           $('.spotifyHide').addClass('spotify');
           $('.spotify').removeClass('spotifyHide')
           $('.spotify').css('display','flex');
+          $('.socialMedia').css('display','flex');
+          $('.socialMediaIcons').css('display','flex').show();
           $('.headerName').css('visibility','visible').slideDown();
           $('.headerEmail').css('display','flex');
           $('.headerEmail').css('visibility','visible');
-          $('.socialMedia').css('display','flex');
           // $('.followBttn').css('visibility','visible').hide().slideDown();
           // $('.followBttn').css('display', 'flex');
       } else if($(this).scrollTop() <= 1) {
@@ -37,13 +35,28 @@ $(document).ready(function() {
           $('.headerName').css('visibility','hidden');
           $('.headerEmail').css('visibility','hidden');
           $('.socialMedia').css('display','none');
+          // $('.socialMediaIcons').css('display','none');
+          // $('.socialMediaIcons').css('visibility','visible');
         };
       });
 
     $(window).scroll(function() { 
       if($(window).scrollTop() + $(window).height() == $(document).height()) { 
-        
+
       } 
     });
-});
 
+
+    // $('.github').on('hover', function(){
+    //   console.log('Does this trigger?')
+    // })
+
+    $('.linkedIn').on('click', function(){
+      window.open('https://www.linkedin.com/in/wilsonrondiniiv', '_blank');
+    })
+
+
+    $('.github').on('click', function(){
+      window.open('https://github.com/WilBeCoding', '_blank');
+    })
+});

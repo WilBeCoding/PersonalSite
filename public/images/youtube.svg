@@ -1,0 +1,18 @@
+
+<svg width="32px" height="23px" viewBox="79 48 32 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M91.696,63.404 L91.695,54.413 L100.341,58.924 L91.696,63.404 Z M110.68,52.855 C110.68,52.855 110.367,50.65 109.408,49.679 C108.191,48.404 106.827,48.398 106.202,48.324 C101.724,48 95.007,48 95.007,48 L94.993,48 C94.993,48 88.276,48 83.798,48.324 C83.172,48.398 81.809,48.404 80.591,49.679 C79.632,50.65 79.32,52.855 79.32,52.855 C79.32,52.855 79,55.445 79,58.034 L79,60.462 C79,63.052 79.32,65.641 79.32,65.641 C79.32,65.641 79.632,67.846 80.591,68.817 C81.809,70.092 83.408,70.052 84.12,70.185 C86.68,70.431 95,70.507 95,70.507 C95,70.507 101.724,70.497 106.202,70.173 C106.827,70.098 108.191,70.092 109.408,68.817 C110.367,67.846 110.68,65.641 110.68,65.641 C110.68,65.641 111,63.052 111,60.462 L111,58.034 C111,55.445 110.68,52.855 110.68,52.855 L110.68,52.855 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Youtube-Icon" stroke="none" fill="none">
+        <use fill="#E31818" fill-rule="evenodd" xlink:href="#path-1"></use>
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+    </g>
+</svg>
