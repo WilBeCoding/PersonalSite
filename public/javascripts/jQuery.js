@@ -37,9 +37,13 @@ $(document).ready(function() {
           $('.headerName').css('visibility','hidden');
           $('.headerEmail').css('visibility','hidden');
           $('.socialMedia').css('display','none');
-          $('.headerEmail')
-
         };
       });
+
+    $(window).scroll(function() { 
+      if($(window).scrollTop() + $(window).height() == $(document).height()) { 
+        
+      } 
+    });
 });
 
