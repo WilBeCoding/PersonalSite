@@ -51,10 +51,22 @@ $(document).ready(function() {
     //   console.log('Does this trigger?')
     // })
 
+    $('.spotifySocial').on('click', function(){
+      window.open('https://play.spotify.com/artist/2ciByYBF9snRskYOqoB5Qf', '_blank');
+    })
+
+    $('.instagram').on('click', function(){
+      window.open('https://www.instagram.com/wilsonrondini/', '_blank');
+    })
+
+
+    $('.twitterSocial').on('click', function(){
+      window.open('https://www.twitter.com/wilbecoding', '_blank');
+    })
+
     $('.linkedIn').on('click', function(){
       window.open('https://www.linkedin.com/in/wilsonrondiniiv', '_blank');
     })
-
 
     $('.github').on('click', function(){
       window.open('https://github.com/WilBeCoding', '_blank');

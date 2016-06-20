@@ -33,7 +33,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border-bottom: 10px black;
+  border-bottom: 1px black;
   border-bottom-style: solid;
 }
 
@@ -71,6 +71,8 @@ h1 {
   justify-content: left;
   flex-direction: column;
   width: 25%;
+  margin-top: 34px;
+  display: hidden;
 }
 
 .socialMediaFooter {
@@ -192,17 +194,18 @@ header {
 
 .socialMediaIcons {
   display: none;
-  margin-top: 28px;
+  margin-top: 13px;
   margin-left: 4px;
   flex-direction: row;
   justify-content: space-between;
+  width: 15vw;
 }
 
 .headerName {
   display:none;
   font-weight: bold;
   font-size:18px;
-  margin-top: -16px;
+  margin-top: -50px;
   margin-left: 5px;
   position: absolute;
 }
@@ -221,14 +224,18 @@ header {
   display:none;
 }
 
-.github:hover {
+/*.github:hover {
   cursor: pointer;
 }
 
-/*.linkedIn {
+.linkedIn {
   margin-left: 9px;
 }
-*/.linkedIn:hover {
+.linkedIn:hover {
+  cursor: pointer;
+}*/
+
+.socialMediaIcons img:hover {
   cursor: pointer;
 }
 
