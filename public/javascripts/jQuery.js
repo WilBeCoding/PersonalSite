@@ -1,11 +1,27 @@
 
 $(document).ready(function() {
-  var height = $(".header").height();
-  var width = $(".header").width();
-  
-  // $(window).load(function() {
+
+  $(window).load(function() {
+
+    if($(".aboutMe").width() > 99) {
+      $(".circleImageHeader").addClass("circleImageRoll");
+      console.log("About me if statement hits")
+      // $(".circleImage").animate({
+      //   roll:
+      // })
+    }
+  });
+
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
+          if($(".aboutMe").width() > 99) {
+            $(".circleImageHeader").addClass("circleImageRoll");
+            console.log("About me if statement hits")
+            // $(".circleImage").animate({
+            //   roll:
+            // })
+          }
+
         $(".midPage").animate({marginTop:"117px"}, 3000);
         $(".testUnderImg").css('visibility','hidden').hide().slideUp();
         $(".testUnderImg1").css('visibility','hidden').hide().slideUp();
@@ -75,3 +91,4 @@ $(document).ready(function() {
       window.open('https://github.com/WilBeCoding', '_blank');
     })
 });
+

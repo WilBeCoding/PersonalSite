@@ -69,7 +69,6 @@ h1 {
 
 .row {
   display:flex;
-  /*flex-direction:;¬*/
   margin-top: 10px;
 }
 
@@ -326,24 +325,16 @@ header {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 415px)  { 
+@media only screen and (max-width: 650px)  { 
 /* body{
   display:flex;
   flex-direction: column;
  }
 */
-  .midPage {
-    margin: 0 auto;
-    width:95%;
-    display: flex;
-    /*flex-wrap: wrap;*/
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
 
   .row {
     display:flex;
-    flex-direction:;
+    flex-direction: column;
     margin-top: 10px;
   }
 
@@ -353,6 +344,59 @@ header {
     flex-wrap: nowrap;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
+
+  .midPage {
+    margin: 0 auto;
+    width:88%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+  img {
+    height: auto;
+  }
+
+  .aboutMe {
+    width: 100%;
+  }
+
+  .aboutMeImage {
+    width: 100%;
+  }
+
+  .music {
+    width: 100%;
+  }
+
+  .musicImg {
+    width: 100%;
+  }
+
+  .trading {
+    width: 100%;
+  }
+
+  .tradingImg{
+    width: 100%;
+  }
+  .webDevelopmentImg {
+    width: 100%;
+  }
+
+  .webDevelopment {
+    width: 100%;
+  }
+
+  .circleImageRoll {
+    animation: roll 1s ease-out;
+  }
+
+  @keyframes roll{
+    0% {transform: translateX(500px) rotate(360deg); opacity: 0;}
+    100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
+  }
+
 }
 
 
