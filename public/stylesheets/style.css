@@ -1,5 +1,4 @@
 html {
-  height: 500vh;
 }
 
 body {
@@ -17,11 +16,7 @@ h1 {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.headerContainer {
-  display: flex;
-
-}
-
+/*Header*/
 .header {
   display: flex;
   flex-direction: column;
@@ -37,36 +32,6 @@ h1 {
   border-bottom-style: solid;
 }
 
-.mainBody {
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.twitter {
-  height:100vh;
-  width:25%;
-  /*background-color: purple;*/
-  border-right: 1px solid black;
-  justify-content: left;
-}
-
-.midPage {
-  width:100%;
-}
-
-.domeHeader {
-  display:flex;
-  width: 100%;
-  justify-content: center;
-/*  background-color: orange;
-*/}
-
-.secondaryHeader {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .socialMedia {
   justify-content: left;
   flex-direction: column;
@@ -75,16 +40,14 @@ h1 {
   display: hidden;
 }
 
-.socialMediaFooter {
-  justify-content: left;
-  flex-direction: column;
-  width: 25%;
+.socialMediaIcons {
+  display: none;
+  margin-top: 13px;
+  margin-left: 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15vw;
 }
-
-.socialMediaFooter p {
-  font-size: 12px;
-}
-
 
 .spotify {
   /*background-color: red;*/
@@ -92,23 +55,161 @@ h1 {
   display:none;
 }
 
-.spotifyFooter {
-  /*background-color: red;*/
+/*MidPage*/
+
+.midPage {
+  margin: 0 auto;
+  width:95%;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.row {
+  display:flex;
+  margin-top: 10px;
+}
+
+.aboutMe {
+  width:50%;
+  /*height: 64%;*/
+  font-size: 24px;
+  display:inline-block;
+}
+
+.aboutMeImage {
+  /*display: flex;*/
+  height: 64%;
+  width: 50%;
+  justify-content: right;
+}
+
+.aboutMeImage img {
+/*  margin-left: auto;
+  margin-right: 0;
+*/  width: 80%;
+}
+
+.musicImg {
+  width: 50%;
+}
+
+.music {
+  width: 50%;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.musicImg {
+    /*display: flex;*/
+    height: 64%;
+    width: 50%;
+    justify-content: right;
+}
+
+.musicImg img {
+  width: 80%;
+}
+
+.trading {
+  width: 50%;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.tradingImg {
+  /*display: flex;*/
+  height: 64%;
+  width: 50%;
+  justify-content: right;
+}
+
+.tradingImg img {
+  width: 80%;
+}
+
+.webDevelopmentImg img {
+  width: 80%;
+}
+
+.webDevelopment {
+  width: 50%;
+  font-size: 24px;
+  display: inline-block;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80px;
+  border-top: 1px black;
+  border-top-style: solid;
+}
+
+.footerHeaderI {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /*background-color: #0683c9;*/
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+
+.socialMediaFooter {
+  justify-content: left;
+  flex-direction: column;
   width: 25%;
-  display:none;
+}
+
+.footerName {
+  font-weight: bold;
+  font-size:18px;
+  margin-top: -14px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.footerName p:nth-of-type(2) {
+  margin: -37px 0 0;
+}
+
+.socialMediaIconsFooter {
+  display:flex;
+  margin-top: 47px;
+  margin-left: 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15vw;
 }
 
 
-.followBttn {
-  /*padding-left: 10px;*/
-  width: 20%;
-  display: none;
-}
 
-.followBttnFooter {
-  /*padding-left: 10px;*/
-  width: 20%;
-  display: none;
+.domeHeader {
+  display:flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .circleImage {
@@ -146,11 +247,6 @@ h1 {
   /*color: orange;*/
 }
 
-.testUnderImg {
-
-}
-
-
 ul {
   list-style: none;
 }
@@ -187,18 +283,8 @@ header {
   transition: all 1s ease;
   display:flex;
   flex-direction: row;
-/*  justify-content: space-between;
-*/  width: 100%;
+  width: 100%;
   height: 80px;
-}
-
-.socialMediaIcons {
-  display: none;
-  margin-top: 13px;
-  margin-left: 4px;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 15vw;
 }
 
 .headerName {
@@ -220,10 +306,6 @@ header {
   visibility: hidden;
 }
 
-.headerEmail {
-  display:none;
-}
-
 /*.github:hover {
   cursor: pointer;
 }
@@ -235,8 +317,15 @@ header {
   cursor: pointer;
 }*/
 
+.socialMediaIconsFooter img:hover {
+  cursor: pointer;
+}
+
 .socialMediaIcons img:hover {
   cursor: pointer;
 }
+
+
+
 
 

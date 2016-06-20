@@ -5,22 +5,24 @@ $(document).ready(function() {
   
   // $(window).load(function() {
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 1){  
-          $(".testUnderImg").css('visibility','hidden').hide().slideUp();
-          $(".testUnderImg1").css('visibility','hidden').hide().slideUp();
-          $(".header").addClass("sticky");
-          $(".circleImage").addClass("circleImageHeader");
-          $(".circleImageHeader").removeClass("circleImage");
-          $('.spotifyHide').addClass('spotify');
-          $('.spotify').removeClass('spotifyHide')
-          $('.spotify').css('display','flex');
-          $('.socialMedia').css('display','flex');
-          $('.socialMediaIcons').css('display','flex').show();
-          $('.headerName').css('visibility','visible').slideDown();
-          $('.headerEmail').css('display','flex');
-          $('.headerEmail').css('visibility','visible');
-          // $('.followBttn').css('visibility','visible').hide().slideDown();
-          // $('.followBttn').css('display', 'flex');
+      if ($(this).scrollTop() > 1){
+        $(".midPage").animate({marginTop:"117px"}, 3000);
+        $(".testUnderImg").css('visibility','hidden').hide().slideUp();
+        $(".testUnderImg1").css('visibility','hidden').hide().slideUp();
+        $(".header").addClass("sticky");
+        $(".circleImage").addClass("circleImageHeader");
+        $(".circleImageHeader").removeClass("circleImage");
+        $('.spotifyHide').addClass('spotify');
+        $('.spotify').removeClass('spotifyHide')
+        $('.spotify').css('display','flex');
+        $('.socialMedia').css('display','flex');
+        $('.socialMediaIcons').css('display','flex').show();
+        $('.headerName').css('visibility','visible').slideDown();
+        $('.headerEmail').css('display','flex');
+        $('.headerEmail').css('visibility','visible');
+        // $(".midPage").stop().css('marginTop','117');
+        // $('.followBttn').css('visibility','visible').hide().slideDown();
+        // $('.followBttn').css('display', 'flex');
       } else if($(this).scrollTop() <= 1) {
           $(".testUnderImg").css('visibility','visible');
           $(".testUnderImg1").css('visibility','visible');
@@ -35,6 +37,7 @@ $(document).ready(function() {
           $('.headerName').css('visibility','hidden');
           $('.headerEmail').css('visibility','hidden');
           $('.socialMedia').css('display','none');
+          $(".midPage").animate({marginTop:""}, 3000);
           // $('.socialMediaIcons').css('display','none');
           // $('.socialMediaIcons').css('visibility','visible');
         };
