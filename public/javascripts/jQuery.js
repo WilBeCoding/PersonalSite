@@ -1,24 +1,30 @@
 
 $(document).ready(function() {
-
   $(window).load(function() {
+    isMobile = false;
 
-    if($(".aboutMe").width() > 99) {
+    // console.log($('.header').css('height'));
+    if($('.header').css('height')>'500px') {
+        isMobile = true;       
+        // console.log(isMobile + '   isMobile is true')
+    }
+
+    // console.log(isMobile +   '     isMobile')
+
+    // console.log($(".aboutMe").width() + '   width on load');
+
+    if(isMobile === true) {
       $(".circleImageHeader").addClass("circleImageRoll");
-      console.log("About me if statement hits")
-      // $(".circleImage").animate({
-      //   roll:
-      // })
+      console.log("first mobile if statement hits")
     }
   });
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
-          if($(".aboutMe").width() > 99) {
+          if(isMobile === true) {
             $(".circleImageHeader").css("width","226px");
             $(".circleImageHeader").css("margin-left","172px");
             $(".circleImageHeader").addClass("circleImageRoll");
-            console.log("About me if statement hits")
           }
 
         $(".midPage").animate({marginTop:"117px"}, 3000);
@@ -39,12 +45,18 @@ $(document).ready(function() {
         // $('.followBttn').css('visibility','visible').hide().slideDown();
         // $('.followBttn').css('display', 'flex');
       } else if($(this).scrollTop() <= 1) {
-          if($(".aboutMe").width() > 99) {
+        // console.log($(".aboutMe").width() + '   width');
+          if(isMobile === true) {
             $(".circleImageHeader").css("width","");
             $(".circleImageHeader").css("margin-left","");
             $(".circleImageHeader").removeClass("circleImageRoll");
             $(".circleImage").removeClass("circleImageHeader");
+            // console.log("eat my ass")
           }
+          $(".circleImageHeader").css("width","");
+          $(".circleImageHeader").css("margin-left","");
+          $(".circleImageHeader").removeClass("circleImageRoll");
+          $(".circleImage").removeClass("circleImageHeader");
           $(".testUnderImg").css('visibility','visible');
           $(".testUnderImg1").css('visibility','visible');
           $(".testUnderImg").css('display','')

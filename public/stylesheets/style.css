@@ -400,6 +400,10 @@ header {
     height: 80px;
   }
 
+  .isMobile {
+    display:none;
+  }
+
   @keyframes roll{
     0% {transform: translateX(500px) rotate(360deg); opacity: 0;}
     100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
