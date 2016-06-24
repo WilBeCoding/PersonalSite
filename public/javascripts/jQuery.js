@@ -3,15 +3,11 @@ $(document).ready(function() {
   $(window).load(function() {
     isMobile = false;
 
-    // console.log($('.header').css('height'));
     if($('.header').css('height')>'500px') {
         isMobile = true;       
-        // console.log(isMobile + '   isMobile is true')
+        $(".circleImageFooter").css("width","226px");
+        $(".circleImageFooter").css("margin-left","172px");
     }
-
-    // console.log(isMobile +   '     isMobile')
-
-    // console.log($(".aboutMe").width() + '   width on load');
 
     if(isMobile === true) {
       $(".circleImageHeader").addClass("circleImageRoll");
