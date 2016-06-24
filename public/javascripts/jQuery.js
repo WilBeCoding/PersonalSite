@@ -15,6 +15,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
           if($(".aboutMe").width() > 99) {
+            $(".circleImageHeader").css("width","226px");
+            $(".circleImageHeader").css("margin-left","172px");
             $(".circleImageHeader").addClass("circleImageRoll");
             console.log("About me if statement hits")
             // $(".circleImage").animate({

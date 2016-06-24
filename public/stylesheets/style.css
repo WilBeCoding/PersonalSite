@@ -332,6 +332,10 @@ header {
  }
 */
 
+  .header {
+    height: 100vh;
+  }
+
   .row {
     display:flex;
     flex-direction: column;
@@ -390,6 +394,10 @@ header {
 
   .circleImageRoll {
     animation: roll 1s ease-out;
+  }
+
+  .sticky {
+    height: 80px;
   }
 
   @keyframes roll{
