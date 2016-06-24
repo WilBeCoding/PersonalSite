@@ -19,9 +19,6 @@ $(document).ready(function() {
             $(".circleImageHeader").css("margin-left","172px");
             $(".circleImageHeader").addClass("circleImageRoll");
             console.log("About me if statement hits")
-            // $(".circleImage").animate({
-            //   roll:
-            // })
           }
 
         $(".midPage").animate({marginTop:"117px"}, 3000);
@@ -42,6 +39,12 @@ $(document).ready(function() {
         // $('.followBttn').css('visibility','visible').hide().slideDown();
         // $('.followBttn').css('display', 'flex');
       } else if($(this).scrollTop() <= 1) {
+          if($(".aboutMe").width() > 99) {
+            $(".circleImageHeader").css("width","");
+            $(".circleImageHeader").css("margin-left","");
+            $(".circleImageHeader").removeClass("circleImageRoll");
+            $(".circleImage").removeClass("circleImageHeader");
+          }
           $(".testUnderImg").css('visibility','visible');
           $(".testUnderImg1").css('visibility','visible');
           $(".testUnderImg").css('display','')
