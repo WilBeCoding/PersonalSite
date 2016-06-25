@@ -305,8 +305,8 @@ header {
   width: 25%;
   visibility: hidden;
 }
-
-/*.github:hover {
+/*
+.github:hover {
   cursor: pointer;
 }
 

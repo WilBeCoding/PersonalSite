@@ -23,7 +23,7 @@ $(document).ready(function() {
             $(".circleImageHeader").addClass("circleImageRoll");
           }
 
-        $(".midPage").animate({marginTop:"117px"}, 3000);
+        // $(".midPage").animate({marginTop:"117px"}, 3000);
         $(".testUnderImg").css('visibility','hidden').hide().slideUp();
         $(".testUnderImg1").css('visibility','hidden').hide().slideUp();
         $(".header").addClass("sticky");
@@ -89,6 +89,10 @@ $(document).ready(function() {
 
     $('.instagram').on('click', function(){
       window.open('https://www.instagram.com/wilsonrondini/', '_blank');
+    })
+
+    $('.youtube').on('click', function() {
+      window.open('https://www.youtube.com/channel/UCQzQJexzf0Md7FVVhfLuGjA');
     })
 
 
