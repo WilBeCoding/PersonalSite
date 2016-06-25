@@ -2,8 +2,14 @@
 $(document).ready(function() {
   $(window).load(function() {
     isMobile = false;
+    isiPhone6 = false;
 
-    if($('.header').css('height')>'500px') {
+
+    if($('.iphone6').css('display') === 'none') {
+      isiPhone6 = true;
+    }
+
+    if($('.header').css('height')>'500px' && $('.iphone6').css('display') != 'none') {
         isMobile = true;       
         $(".circleImageFooter").css("width","226px");
         $(".circleImageFooter").css("margin-left","172px");
@@ -11,18 +17,19 @@ $(document).ready(function() {
 
     if(isMobile === true) {
       $(".circleImageHeader").addClass("circleImageRoll");
-      console.log("first mobile if statement hits")
     }
   });
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
-          if(isMobile === true) {
-            $(".circleImageHeader").css("width","226px");
+          if(isMobile === true || isiPhone6 === true) {
+            // $(".circleImageHeader").css("width","226px");
             $(".circleImageHeader").css("margin-left","172px");
             $(".circleImageHeader").addClass("circleImageRoll");
           }
-
+          // if(isiPhone6 === true) {
+          //   $(".circleImageHeader").addClass("circleImageRoll");
+          // }
         // $(".midPage").animate({marginTop:"117px"}, 3000);
         $(".testUnderImg").css('visibility','hidden').hide().slideUp();
         $(".testUnderImg1").css('visibility','hidden').hide().slideUp();
