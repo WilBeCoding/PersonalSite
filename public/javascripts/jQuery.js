@@ -5,6 +5,20 @@ $(document).ready(function() {
     isiPhone6 = false;
 
 
+    // ___+_+_+_+_ ANIMATE THE METERS _+_+_+_+_+_+____
+
+    $(".meter > span").each(function() {
+      console.log('meter hits')
+      $(this)
+        .data("origWidth", $(this).width())
+        .width(0)
+        .animate({
+          width: $(this).data("origWidth")
+          // or + "%" if fluid
+        }, 1200);
+    });
+
+
     if($('.iphone6').css('display') === 'none') {
       isiPhone6 = true;
     }
@@ -73,7 +87,7 @@ $(document).ready(function() {
           $('.headerName').css('visibility','hidden');
           $('.headerEmail').css('visibility','hidden');
           $('.socialMedia').css('display','none');
-          $(".midPage").animate({marginTop:""}, 3000);
+          // $(".midPage").animate({marginTop:""}, 3000);
           // $('.socialMediaIcons').css('display','none');
           // $('.socialMediaIcons').css('visibility','visible');
         };
