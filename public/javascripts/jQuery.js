@@ -3,6 +3,7 @@ $(document).ready(function() {
   $(window).load(function() {
     isMobile = false;
     isiPhone6 = false;
+    console.log(isMobile + '      +_+_+_+_+_+_+_ isMobile')
 
 
     // ___+_+_+_+_ ANIMATE THE METERS _+_+_+_+_+_+____
@@ -25,13 +26,13 @@ $(document).ready(function() {
 
     if($('.header').css('height')>'500px' && $('.iphone6').css('display') != 'none') {
         isMobile = true;       
-        $(".circleImageFooter").css("width","226px");
-        $(".circleImageFooter").css("margin-left","172px");
+    //     $(".circleImageFooter").css("width","226px");
+    //     $(".circleImageFooter").css("margin-left","172px");
     }
 
-    if(isMobile === true) {
-      $(".circleImageHeader").addClass("circleImageRoll");
-    }
+    // if(isMobile === true) {
+    //   $(".circleImageHeader").addClass("circleImageRoll");
+    // }
   });
 
     $(window).scroll(function() {
