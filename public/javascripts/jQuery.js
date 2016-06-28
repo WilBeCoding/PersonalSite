@@ -36,7 +36,7 @@ $(document).ready(function() {
   });
 
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 1){
+      if ($(this).scrollTop() > 5){
           if(isMobile === true || isiPhone6 === true) {
             // $(".circleImageHeader").css("width","226px");
             $(".circleImageHeader").css("margin-left","172px");
