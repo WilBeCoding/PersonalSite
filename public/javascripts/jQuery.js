@@ -59,7 +59,7 @@ $(document).ready(function() {
         $('.headerName').css('visibility','visible').slideDown();
         $('.headerEmail').css('display','flex');
         $('.headerEmail').css('visibility','visible');
-        // $(".midPage").stop().css('marginTop','117');
+        $(".midPage").stop().css('margin','70px auto');
         // $('.followBttn').css('visibility','visible').hide().slideDown();
         // $('.followBttn').css('display', 'flex');
       } else if($(this).scrollTop() <= 1) {
