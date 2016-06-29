@@ -166,15 +166,17 @@ h1 {
 }
 
 .webDevelopment {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 75vh;
   font-size: 24px;
-  display: inline-block;
 }
 
-
-
-
-
+.webDevelopment h2 {
+  text-align: center;
+}
 
 /*FOOTER*/
 
@@ -182,7 +184,7 @@ h1 {
   font-size: 24px;
   line-height: 48px;
   height: 48px;
-  background: #FFFFFF;
+  /*color: red;*/
   display:flex;
   flex-direction: row;
   width: 100%;
@@ -486,6 +488,15 @@ header {
   -webkit-animation: none;
   background-image: none;
 }
+
+.contactForm p {
+  font-size: 24px;
+}
+
+.contactForm {
+  text-align: center;
+}
+
 @media only screen and (max-width: 650px)  { 
 /* body{
   display:flex;
@@ -579,6 +590,7 @@ header {
 
   .webDevelopment {
     width: 100%;
+    color: orange;
   }
 
   .circleImageRoll {

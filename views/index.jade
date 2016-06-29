@@ -74,22 +74,22 @@ block content
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AfRvpqdJKP4" frameborder="0" allowfullscreen></iframe>
         //- <iframe src="https://embed.spotify.com/?uri=spotify:album:5VtiW4DabvLmY9vJH80GXd" width="300" height="525" frameborder="0" allowtransparency="true"></iframe>
     .row
-      .musicImg
-      .music
-        h2 My Music
-        p Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor...
-    .row
-      .trading
-        h2 Trading
-        p Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor...
-      .tradingImg
-        img(src='https://i.ytimg.com/vi/TInfxe7c7yA/maxresdefault.jpg')
-    .row
-      .webDevelopmentImg
-        img(src='https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?crop=entropy&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1450')
       .webDevelopment.iphone6
-        h2 Web Development
-        p Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor... Hodor hodor hodor, hodor. Hodor hodor... Hodor hodor hodor hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR hodor, hodor hodor? Hodor. Hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor; hodor hodor... Hodor hodor hodor - hodor. Hodor. Hodor hodor - hodor; hodor hodor; hodor hodor? Hodor! Hodor hodor, hodor...
+        h2 Let's get in touch!
+        .contactForm
+          form(name='contactForm', method='post')
+            .inputName
+              span
+                p My name is 
+                  input(type='text', name='name')
+            .inputSubject
+              span
+                p I'd like to talk about 
+                  input(type='text', name='subject')
+            .inputContent
+              textarea(name="messageContent", cols="40", rows="5")
+            .submit
+              input.btn.btn-primary(type='submit', value='Submit')
   .footer
     .socialMediaFooter
       .footerName

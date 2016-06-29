@@ -88,6 +88,7 @@ $(document).ready(function() {
           $('.headerName').css('visibility','hidden');
           $('.headerEmail').css('visibility','hidden');
           $('.socialMedia').css('display','none');
+          $(".midPage").stop().css('margin','0 auto');
           // $(".midPage").animate({marginTop:""}, 3000);
           // $('.socialMediaIcons').css('display','none');
           // $('.socialMediaIcons').css('visibility','visible');
