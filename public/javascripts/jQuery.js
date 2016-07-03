@@ -25,7 +25,11 @@ $(document).ready(function() {
     }
 
     if($('.header').css('height')>'500px' && $('.iphone6').css('display') != 'none') {
-        isMobile = true;       
+        isMobile = true;
+        $('.aboutMeImage').css('display','none');
+        $('.aboutMeImageMobile').css('display','block');
+
+        // $('.aboutMeImage').css('display','none');
     //     $(".circleImageFooter").css("width","226px");
     //     $(".circleImageFooter").css("margin-left","172px");
     }
@@ -39,7 +43,7 @@ $(document).ready(function() {
       if ($(this).scrollTop() > 5){
           if(isMobile === true || isiPhone6 === true) {
             // $(".circleImageHeader").css("width","226px");
-            $(".circleImageHeader").css("margin-left","172px");
+            $(".circleImageHeader").css("margin-left","153px");
             $(".circleImageHeader").addClass("circleImageRoll");
           }
           // if(isiPhone6 === true) {
