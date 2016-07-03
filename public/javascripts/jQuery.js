@@ -22,13 +22,16 @@ $(document).ready(function() {
 
     if($('.iphone6').css('display') === 'none') {
       isiPhone6 = true;
+      $('.aboutMeImage').css('display','none');
+      $('.aboutMeImageMobile').css('display','block');
+      $('.footer').css('display','none');
     }
 
     if($('.header').css('height')>'500px' && $('.iphone6').css('display') != 'none') {
         isMobile = true;
         $('.aboutMeImage').css('display','none');
         $('.aboutMeImageMobile').css('display','block');
-
+        $('.footer').css('display','none');
         // $('.aboutMeImage').css('display','none');
     //     $(".circleImageFooter").css("width","226px");
     //     $(".circleImageFooter").css("margin-left","172px");
